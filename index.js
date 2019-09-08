@@ -1,5 +1,7 @@
 'use strict';
 const pTry = require('p-try');
+const qs = require('query-string');
+console.log(qs)
 
 const pLimit = concurrency => {
 	if (!((Number.isInteger(concurrency) || concurrency === Infinity) && concurrency > 0)) {
